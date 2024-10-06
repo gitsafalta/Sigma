@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalentTracker", "TalentTracker\TalentTracker.csproj", "{9470CA5E-1CDD-4173-A7F6-BB306A7FCB8A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TalentTracker.UnitTests", "TalentTracker.UnitTests\TalentTracker.UnitTests.csproj", "{77A67906-E6ED-4B47-BD92-8F9FB9FCC8A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9470CA5E-1CDD-4173-A7F6-BB306A7FCB8A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9470CA5E-1CDD-4173-A7F6-BB306A7FCB8A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9470CA5E-1CDD-4173-A7F6-BB306A7FCB8A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9470CA5E-1CDD-4173-A7F6-BB306A7FCB8A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{77A67906-E6ED-4B47-BD92-8F9FB9FCC8A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{77A67906-E6ED-4B47-BD92-8F9FB9FCC8A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{77A67906-E6ED-4B47-BD92-8F9FB9FCC8A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{77A67906-E6ED-4B47-BD92-8F9FB9FCC8A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D2EF16CE-CFF9-4243-B707-3DBE04CC4A3F}
+	EndGlobalSection
+EndGlobal
