@@ -1,5 +1,4 @@
 using Sigma.Core;
-using Sigma.Infrastructure;
 
 namespace Sigma.Infrastructure;
 public interface ICandidatesRepository

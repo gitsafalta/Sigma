@@ -1,5 +1,8 @@
 
+using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using Sigma.Application;
+using Sigma.Application.Mapper;
 using Sigma.Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +16,10 @@ builder.Services.AddDbContext<SigmaDBContext>(options =>
 });
 
 builder.Services.AddTransient<ICandidatesRepository, CandidatesRepository>();
+builder.Services.AddTransient<ICandidateService, CandidateService>();
+builder.Services.AddAutoMapper(typeof(CandidateMapper));
+builder.Services.AddTransient<IValidator<CandidateDTO>, CandidateValidator>();
+
 
 var app = builder.Build();
 
@@ -24,5 +31,6 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+app.ConfigureApi();
 
 app.Run();

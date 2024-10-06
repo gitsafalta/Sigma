@@ -5,3 +5,5 @@ obj
 
 # Ignore appsettings
 *.Development.json
+
+.DS_Store
