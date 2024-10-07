@@ -1,6 +1,8 @@
 
 using FluentValidation;
 
+namespace Sigma.Application;
+
 public class CandidateValidator : AbstractValidator<CandidateDTO>
 {
    public CandidateValidator()

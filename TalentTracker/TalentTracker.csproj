@@ -21,4 +21,7 @@
     <PackageReference Include="AutoMapper" Version="13.0.1" />
   </ItemGroup>
 
+  <ItemGroup>
+    <InternalsVisibleTo Include="TalentTracker.UnitTests" />
+  </ItemGroup>
 </Project>

@@ -1,5 +1,4 @@
-
-using System.ComponentModel.DataAnnotations;
+namespace Sigma.Application;
 
 public class CandidateDTO
 {

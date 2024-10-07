@@ -5,7 +5,7 @@ public static class Api
 {
  public static void ConfigureApi(this WebApplication app)
  {
-  var candidate = app.MapGroup("candidate").WithTags("/candidate");
+  var candidate = app.MapGroup("api/candidate").WithTags("/candidate");
   candidate.MapPost("", SaveCandidate).WithTags("Candidate");
  }
 
@@ -18,6 +18,6 @@ public static class Api
       return Results.ValidationProblem(result.ToDictionary());
     }
     await candidatService.SaveCandidate(model);
-    return Results.Ok();
+    return Results.Created();
  }
 }
