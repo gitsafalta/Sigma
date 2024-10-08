@@ -1,6 +1,8 @@
 
+using AutoMapper;
 using FluentValidation;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Caching.Memory;
 using Sigma.Application;
 using Sigma.Application.Mapper;
 using Sigma.Infrastructure;
@@ -19,8 +21,9 @@ builder.Services.AddTransient<ICandidatesRepository, CandidatesRepository>();
 builder.Services.AddTransient<ICandidateService, CandidateService>();
 builder.Services.AddAutoMapper(typeof(CandidateMapper));
 builder.Services.AddTransient<IValidator<CandidateDTO>, CandidateValidator>();
+builder.Services.AddSingleton<IMemoryCache, MemoryCache>();
 
-
+builder.Services.AddMemoryCache();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
